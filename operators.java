@@ -26,5 +26,16 @@ public class operators {
         // Pre Increment
         ++a;
         System.out.printf("Pre Increment a: %d\n", a);
+
+
+        // create a function that takes a number as argument and check if it is devisible by 2 and return true else return false
+        int devisibleBy2 = 4;
+        boolean isDevisibleBy2 = isDevisibleBy2(devisibleBy2);
+        System.out.printf("Is %d devisible by 2?: %b\n", devisibleBy2, isDevisibleBy2);
+    }
+
+    // private static method isDevisibleBy2 checks if a number is devisible by 2
+    private static boolean isDevisibleBy2(int val) {
+        return val % 2 == 0; 
     }
 }
