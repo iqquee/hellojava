@@ -1,17 +1,19 @@
 public class class_object {
     public static void main(String[] args){
-        int num1 = 5;
-        int num2 = 3;
-
         Calculator calculator = new Calculator();
-        int result = calculator.add(num1,   num2);
+        calculator.val1 = 5;
+        calculator.val2 = 3;
+        int result = calculator.add();
 
         System.out.println("Addition: " + result);
     }
 }
 
 class Calculator {
-    public int add(int val1, int val2) {
+    int val1;
+    int val2;
+
+    public int add() {
         return val1 + val2;
     }
 } 
